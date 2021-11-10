@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    background-color:wheat;
+}
+
+div:nth-of-type(1){
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: black;
+    animation-name: merry;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    position: absolute;
+}
+
+div:nth-of-type(1):hover{
+    animation-play-state: paused;
+}
+
+div:nth-of-type(2):hover{
+    animation-play-state: paused;
+}
+
+div:nth-of-type(2){
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: blue;
+    animation-name: merry2;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+}
+
+@keyframes merry{
+    0%, 100%{
+        transform: translateX(0px);
+        background: yellow;
+    }
+
+    25% {
+        transform: translateX(200px);
+        background: red;
+    }
+
+    50% {
+        transform: translate(200px, 100px);
+        background: dodgerblue;
+    }
+
+    75% {
+        transform: translate(0px, 100px);
+        background-color: darkgreen;
+    }
+}
+
+@keyframes merry2{
+    0%, 100%{
+        transform: translateX(0px);
+        background: yellow;
+    }
+
+    25% {
+        transform: translateX(93vw);
+        background: red;
+    }
+
+    50% {
+        transform: translate(93vw, 85vh);
+        background: dodgerblue;
+    }
+
+    75% {
+        transform: translate(0, 85vh);
+        background-color: darkgreen;
+    }
+}
